@@ -5,7 +5,7 @@ const express = require('express')
 
 const app = express ();
 
-const port = 9494;
+const port = process.env.PORT || 8081;
 
 app.get ('/', (req, res) => {
   res.send ('Welcome to the Home page..........');
